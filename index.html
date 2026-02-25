@@ -1,48 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
   <meta charset="UTF-8" />
   <title>Vamsi Krishna Bh | Full Stack Java Developer</title>
 
-  <!-- Favicon (browser tab icon) -->
   <link rel="icon" type="image/png" href="bvk-logo.jpeg">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
-
-  <style>
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Prevent anchors from hiding under fixed header */
-    section {
-      scroll-margin-top: 110px;
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- ===== Navigation ===== -->
   <header class="nav-shell">
     <div class="nav-inner">
-      <!-- Logo -->
       <a href="#home" class="brand">
         <img src="bvk-logo.jpeg" alt="BVK logo" class="brand-logo" />
       </a>
 
-      <!-- Links -->
       <nav class="main-nav">
         <a href="#home" class="nav-link nav-active">Home</a>
         <a href="#skills" class="nav-link">Skills</a>
@@ -50,18 +32,15 @@
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#research" class="nav-link">Research</a>
         <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#contact" class="nav-link">Contact</a>
         <a href="blog.html" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-
-  <!-- ===== Hero Section ===== -->
   <section id="home" class="section hero">
     <div class="hero-wrapper">
 
-      <!-- Left Side: Text -->
       <div class="hero-content">
         <p class="hero-tag">Full Stack Java Developer</p>
 
@@ -75,17 +54,13 @@
           <a href="#projects" class="btn hero-primary">View Projects</a>
           <a href="#contact" class="btn hero-outline">Contact Me</a>
 
-          <!-- ✅ Updated resume file name to the one you uploaded earlier -->
-          <!-- If you want a different file name, just change the href OR rename the pdf in your project -->
-          <a href="VamsiKrishna_Bhagavathula.pdf" class="btn hero-outline" download>
-            Download Resume
-          </a>
+          <a href="VamsiKrishna_Bhagavathula.pdf" class="btn hero-outline" target="_blank" rel="noopener">Resume</a>
         </div>
 
         <div class="hero-social">
           <a href="mailto:vamsik.bh72@gmail.com">📧 Email</a>
           <span>•</span>
-          <a href="https://www.linkedin.com/in/vamsikbhagavathula/" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="https://www.linkedin.com/in/vamsikbh" target="_blank" rel="noopener">💼 LinkedIn</a>
         </div>
 
         <div class="hero-meta">
@@ -95,7 +70,6 @@
         </div>
       </div>
 
-      <!-- Right Side: Cropped Photo -->
       <div class="hero-photo">
         <img src="vamsi.jpeg" alt="Vamsi Krishna Bhagavathula">
       </div>
@@ -103,7 +77,6 @@
     </div>
   </section>
 
-  <!-- ===== Skills ===== -->
   <section id="skills" class="section">
     <h2 class="section-title">Skills & Tech Stack</h2>
     <p class="section-subtitle">
@@ -154,7 +127,6 @@
     </div>
   </section>
 
-  <!-- ===== Experience ===== -->
   <section id="experience" class="section">
     <h2 class="section-title">Experience</h2>
     <p class="section-subtitle">
@@ -163,7 +135,6 @@
 
     <div class="timeline">
 
-      <!-- Verizon -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content card">
@@ -178,18 +149,19 @@
             <li>Developing performant React + Redux Toolkit dashboards for real-time monitoring and troubleshooting.</li>
             <li>Enhancing CI/CD pipelines with Jenkins, Docker, and Kubernetes to support frequent, reliable releases.</li>
             <li>Improving observability and reliability through centralized logging, metrics, and alerting across services.</li>
+	   <li>Delivered high-throughput APIs and event pipelines supporting critical telecom workflows with improved system reliability and scalability.</li>
           </ul>
           <div class="tag-list">
             <span class="tag-chip">Java 17</span>
             <span class="tag-chip">WebFlux</span>
             <span class="tag-chip">Kafka</span>
-            <span class="tag-chip">React</span>
             <span class="tag-chip">Kubernetes</span>
+	    <span class="tag-chip">Event-Driven</span>
+	    <span class="tag-chip">Reactive Systems</span>
           </div>
         </div>
       </div>
 
-      <!-- SLHT -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content card">
@@ -204,17 +176,19 @@
             <li>Optimized SQL queries and AWS RDS schemas to handle large-scale reporting workloads efficiently.</li>
             <li>Automated build and deployment pipelines with Jenkins, Docker, and Kubernetes to streamline releases.</li>
             <li>Implemented monitoring and dashboards using Splunk for application health and performance visibility.</li>
+	   <li>Reduced UI latency by ~40% and improved data retrieval performance by ~30% through query optimization and frontend performance tuning.</li>
           </ul>
           <div class="tag-list">
             <span class="tag-chip">Spring Boot</span>
-            <span class="tag-chip">Angular</span>
-            <span class="tag-chip">AWS RDS</span>
+            <span class="tag-chip">Angular/ React</span>
+            <span class="tag-chip">AWS</span>
             <span class="tag-chip">Docker</span>
+	    <span class="tag-chip">Secure APIs</span>
+	    <span class="tag-chip">Real-Time Analytics</span>
           </div>
         </div>
       </div>
 
-      <!-- GRA -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content card">
@@ -230,16 +204,16 @@
             <li>Conducted research in energy-efficient edge computing and secure IoT communication; received an Academic Excellence Award.</li>
           </ul>
           <div class="tag-list">
-            <span class="tag-chip">AI</span>
+<span class="tag-chip">IoT Security</span>
+	    <span class="tag-chip">Edge Computing</span>	
             <span class="tag-chip">Java</span>
             <span class="tag-chip">Python</span>
             <span class="tag-chip">SQL</span>
-            <span class="tag-chip">Research</span>
+            <span class="tag-chip">Applied Research</span>
           </div>
         </div>
       </div>
 
-      <!-- Silicon Matrix -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content card">
@@ -253,12 +227,13 @@
             <li>Implemented secure REST APIs with Spring Boot and JWT-based authentication.</li>
             <li>Improved API performance through SQL query optimization and caching strategies.</li>
             <li>Supported deployments and infrastructure tasks using AWS EC2, S3, and IAM.</li>
-          </ul>
+</ul>
           <div class="tag-list">
             <span class="tag-chip">React</span>
             <span class="tag-chip">Spring Boot</span>
             <span class="tag-chip">JWT</span>
             <span class="tag-chip">AWS</span>
+	    <span class="tag-chip">Performance Optimization</span>
           </div>
         </div>
       </div>
@@ -266,7 +241,6 @@
     </div>
   </section>
 
-  <!-- ===== Projects ===== -->
   <section id="projects" class="section">
     <h2 class="section-title">Highlighted Projects</h2>
     <p class="section-subtitle">
@@ -275,7 +249,6 @@
 
     <div class="grid projects-grid">
 
-      <!-- Project 1 -->
       <div class="card project-card">
         <div class="project-header">
           <h3>Telecom Microservices Platform</h3>
@@ -302,7 +275,6 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="card project-card">
         <div class="project-header">
           <h3>Compliance Analytics Dashboard</h3>
@@ -327,7 +299,6 @@
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="card project-card">
         <div class="project-header">
           <h3>E-Commerce Platform UI</h3>
@@ -357,12 +328,10 @@
     </div>
   </section>
 
-  <!-- ===== Research & Achievements ===== -->
   <section id="research" class="section">
     <h2 class="section-title">Research & Achievements</h2>
 
     <div class="grid research-grid">
-      <!-- Thesis -->
       <div class="card research-card">
         <h3>Energy-Efficient Edge Computing (Thesis)</h3>
         <p>Graduate thesis exploring lightweight "AI" workloads for IoT and edge devices.</p>
@@ -377,7 +346,6 @@
         </div>
       </div>
 
-      <!-- ACM Paper -->
       <div class="card research-card">
         <h3>ACM Conference Paper</h3>
         <p>Published research on secure IoT communication using Zymkey-based mutual authentication.</p>
@@ -392,13 +360,12 @@
         </div>
       </div>
 
-      <!-- Teaching & Mentorship -->
       <div class="card research-card">
         <h3>Teaching & Mentorship</h3>
         <p>Graduate Research &amp; Teaching Assistant for Java, Python, SQL, and Database Design at Columbus State University.</p>
         <div class="btn-wrapper">
           <a
-            href="https://www.linkedin.com/in/vamsikbhagavathula/"
+            href="https://www.linkedin.com/in/vamsikbh"
             target="_blank"
             rel="noopener"
             class="small-btn">
@@ -407,7 +374,6 @@
         </div>
       </div>
 
-      <!-- Academic Excellence Award -->
       <div class="card research-card award-card">
         <h3>Academic Excellence Award</h3>
         <p>Recognized for outstanding academic performance in the M.S. in Applied Computer Science program (2022–2023).</p>
@@ -425,7 +391,6 @@
 
   </section>
 
-  <!-- ===== Certifications ===== -->
   <section id="certifications" class="section">
     <h2 class="section-title">Certifications</h2>
     <p class="section-subtitle">Industry-recognized skill validation.</p>
@@ -462,13 +427,11 @@
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
   <section id="contact" class="section">
     <h2 class="section-title">Get in Touch</h2>
 
     <div class="contact-grid">
 
-      <!-- Contact details -->
       <div class="card contact-card contact-info-card">
         <h3 class="contact-title">Contact Details</h3>
 
@@ -496,14 +459,13 @@
           <div class="contact-icon">🔗</div>
           <div>
             <span class="contact-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/vamsikbhagavathula/" target="_blank" rel="noopener" class="contact-value">
-              linkedin.com/in/vamsikbhagavathula
+            <a href="https://www.linkedin.com/in/vamsikbh" target="_blank" rel="noopener" class="contact-value">
+              linkedin.com/in/vamsikbh
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Message form (EmailJS) -->
       <div class="card contact-card">
         <h3>Message</h3>
         <form id="contactForm" class="contact-form">
@@ -518,12 +480,10 @@
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer class="footer">
     <p>© <span id="year"></span> Vamsi Krishna Bh. All rights reserved.</p>
   </footer>
 
-  <!-- EmailJS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <script>
@@ -558,7 +518,6 @@
     });
   </script>
 
-  <!-- ✅ Scroll Spy: update active nav link while scrolling -->
   <script>
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-link[href^='#']");
