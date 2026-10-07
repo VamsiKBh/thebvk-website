@@ -239,6 +239,13 @@ button {
 
 .interactive-card {
 
+    outline: none;
+
+    -webkit-tap-highlight-color:
+        rgba(113, 161, 255, 0.12);
+
+    touch-action: manipulation;
+
     transition:
         background var(--transition),
         border-color var(--transition),
@@ -248,6 +255,8 @@ button {
 
 
 .interactive-card:hover,
+.interactive-card:focus,
+.interactive-card:focus-visible,
 .interactive-card:focus-within {
 
     background:
@@ -372,6 +381,14 @@ button {
 }
 
 
+
+
+.mobile-nav-strip {
+    display: none;
+}
+
+
+.linkedin-nav,
 .resume-nav {
 
     padding:
@@ -387,6 +404,7 @@ button {
 }
 
 
+.linkedin-nav:hover,
 .resume-nav:hover {
 
     border-color:
@@ -394,11 +412,6 @@ button {
 
     background:
         rgba(113, 161, 255, 0.07);
-}
-
-
-.mobile-nav {
-    display: none;
 }
 
 
@@ -585,6 +598,30 @@ button {
 }
 
 
+.button-linkedin {
+
+    color: #dbe7ff;
+
+    border:
+        1px solid rgba(113, 161, 255, 0.28);
+
+    background:
+        rgba(113, 161, 255, 0.08);
+}
+
+
+.button-linkedin:hover {
+
+    color: white;
+
+    border-color:
+        rgba(113, 161, 255, 0.48);
+
+    background:
+        rgba(113, 161, 255, 0.15);
+}
+
+
 .text-link {
 
     padding:
@@ -657,7 +694,7 @@ button {
     justify-self: end;
 
     margin:
-        46px 34px;
+        32px 22px;
 
     isolation: isolate;
 }
@@ -707,7 +744,7 @@ button {
 
     position: absolute;
 
-    inset: -46px;
+    inset: -28px;
 
     z-index: 4;
 
@@ -715,7 +752,7 @@ button {
 
     animation:
         orbitSpin
-        28s
+        42s
         linear
         infinite;
 }
@@ -798,7 +835,7 @@ button {
 
     animation:
         orbitCounterSpin
-        28s
+        42s
         linear
         infinite;
 }
@@ -2037,97 +2074,82 @@ button {
     }
 
 
-    .mobile-nav {
-
-        display: block;
-
-        position: relative;
+    .nav-wrap {
+        min-height: 58px;
     }
 
 
-    .mobile-nav summary {
+    .mobile-nav-strip {
 
-        cursor: pointer;
+        display: block;
 
-        list-style: none;
+        border-top:
+            1px solid rgba(255, 255, 255, 0.055);
+
+        background:
+            rgba(11, 15, 22, 0.94);
+    }
+
+
+    .mobile-nav-scroll {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+        overflow-x: auto;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .mobile-nav-scroll a {
+
+        flex: 0 0 auto;
 
         padding:
-            8px 12px;
+            6px 10px;
 
         border:
             1px solid var(--line);
 
-        border-radius:
-            999px;
+        border-radius: 999px;
 
         background:
             rgba(255, 255, 255, 0.02);
 
         color: var(--text-soft);
 
-        font-size: 0.73rem;
+        font-size: 0.68rem;
 
         font-weight: 650;
+
+        white-space: nowrap;
     }
 
 
-    .mobile-nav summary::-webkit-details-marker {
-        display: none;
-    }
-
-
-    .mobile-nav nav {
-
-        position: absolute;
-
-        top:
-            calc(100% + 9px);
-
-        right: 0;
-
-        width:
-            min(
-                270px,
-                calc(100vw - 30px)
-            );
-
-        display: grid;
-
-        padding: 10px;
-
-        border:
-            1px solid var(--line);
-
-        border-radius: 14px;
-
-        background:
-            rgba(14, 19, 29, 0.98);
-
-        box-shadow:
-            0 20px 50px
-            rgba(0, 0, 0, 0.3);
-    }
-
-
-    .mobile-nav nav a {
-
-        padding:
-            9px 10px;
-
-        border-radius: 7px;
-
-        color: var(--text-soft);
-
-        font-size: 0.76rem;
-    }
-
-
-    .mobile-nav nav a:hover {
-
-        background:
-            rgba(113, 161, 255, 0.08);
+    .mobile-nav-scroll a:active,
+    .mobile-nav-scroll a:focus-visible {
 
         color: white;
+
+        background:
+            rgba(113, 161, 255, 0.12);
+
+        border-color:
+            rgba(113, 161, 255, 0.34);
     }
 
 
@@ -2151,12 +2173,12 @@ button {
         max-width: 310px;
 
         margin:
-            45px auto;
+            30px auto;
     }
 
 
     .orbit-track {
-        inset: -39px;
+        inset: -24px;
     }
 
 
@@ -2319,6 +2341,24 @@ button {
     }
 
 
+    .mobile-nav-scroll {
+
+        gap: 6px;
+
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+
+    .mobile-nav-scroll a {
+
+        padding:
+            5px 9px;
+
+        font-size: 0.64rem;
+    }
+
+
     .hero {
 
         padding:
@@ -2366,12 +2406,12 @@ button {
         max-width: 265px;
 
         margin:
-            44px auto;
+            28px auto;
     }
 
 
     .orbit-track {
-        inset: -31px;
+        inset: -18px;
     }
 
 
@@ -2501,7 +2541,7 @@ button {
 
 
     .orbit-track {
-        inset: -27px;
+        inset: -16px;
     }
 
 
@@ -2531,30 +2571,31 @@ button {
 
 @media (hover: none) {
 
-    .interactive-card:hover {
-
-        transform: none;
-
-        background: transparent !important;
-
-        box-shadow: none;
-    }
-
-
-    .interactive-card:active {
+    .interactive-card:active,
+    .interactive-card:focus,
+    .interactive-card:focus-visible,
+    .interactive-card:focus-within {
 
         background:
             var(--bg-card-hover) !important;
 
         border-color:
-            rgba(113, 161, 255, 0.34) !important;
+            rgba(113, 161, 255, 0.36) !important;
+
+        box-shadow:
+            0 0 0 1px
+            rgba(113, 161, 255, 0.08);
+
+        transform:
+            translateY(-1px);
     }
 
 
-    .button:hover,
-    .submit-button:hover {
+    .button:active,
+    .submit-button:active {
 
-        transform: none;
+        transform:
+            scale(0.99);
     }
 
 }
@@ -2598,7 +2639,7 @@ button {
     .site-header,
     .hero-actions,
     .contact-form,
-    .mobile-nav,
+    .mobile-nav-strip,
     .orbit-track {
 
         display: none !important;
